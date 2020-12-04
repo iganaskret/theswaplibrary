@@ -1,0 +1,67 @@
+:root {
+  --light-beige: #f1ede9;
+  --beige: #cabfae;
+  --brown: #69513a;
+  --light-brown: #ba9273;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  src: url(Poppins/Poppins-Bold.ttf);
+  font-weight: bold;
+}
+
+#index-page {
+  background-color: var(--light-beige);
+  font-family: "Poppins";
+}
+
+#index-page .logo {
+  text-align: center;
+  font-size: 10px;
+  display: block;
+  margin: 40% auto 0 auto;
+}
+
+#index-page div:nth-of-type(2) {
+  margin-top: 50%;
+}
+
+#index-page div button {
+  display: block;
+  margin: 0 auto;
+  font-family: "Poppins Bold";
+  width: 250px;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 2px solid var(--brown);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#index-page div button a {
+  color: var(--brown);
+  text-decoration: none;
+}
+
+#index-page div button.focus a {
+  color: var(--light-beige);
+  text-decoration: none;
+}
+
+#index-page div button.focus {
+  background-color: var(--brown);
+  margin-bottom: 20px;
+}
