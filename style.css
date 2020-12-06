@@ -3,6 +3,7 @@
   --beige: #cabfae;
   --brown: #69513a;
   --light-brown: #ba9273;
+  --img-height: 0;
 }
 
 @font-face {
@@ -16,11 +17,21 @@
   font-weight: bold;
 }
 
+@font-face {
+  font-family: "Poppins Regular";
+  src: url(Poppins/Poppins-Regular.ttf);
+}
+
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins";
+  width: 100vw;
+}
+
+.hide {
+  display: none;
 }
 
 #index-page {
@@ -132,4 +143,124 @@ html {
 #login-page #signup-link {
   text-decoration: none;
   color: var(--brown);
+}
+
+#feed-page nav {
+  background-color: var(--light-beige);
+  margin: 0;
+  width: 100vw;
+  height: 75px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#feed-page nav div#add-book-icon {
+  position: relative;
+  top: 23px;
+  left: 23px;
+}
+
+#feed-page nav div:nth-child(2) {
+  position: absolute;
+  top: 17px;
+  right: 70px;
+}
+
+#feed-page nav div:nth-child(3) {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+}
+
+#feed-page #feed-logo img {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100vw;
+}
+
+#feed-page #feed-logo div.mask {
+  width: 100vw;
+  background-color: rgba(105, 81, 58, 0.5);
+  height: var(--img-height);
+  position: absolute;
+  top: 75px;
+  left: 0;
+}
+
+#feed-page #feed-logo svg {
+  position: absolute;
+  left: 50%;
+  margin-left: -81.5px;
+  top: calc((var(--img-height) / 2) + 30px);
+}
+
+#feed-page #feed {
+  position: relative;
+  top: calc((var(--img-height)) + 85px);
+}
+
+#feed-page #feed h1 {
+  font-size: 25px;
+  margin-left: 10px;
+}
+
+#feed-page #feed .feed-grid {
+  margin-left: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#feed-page #feed .feed-grid h2 {
+  color: var(--brown);
+  font-size: 22px;
+}
+
+#feed-page .burger-menu-modal {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: var(--light-beige);
+}
+
+#feed-page .burger-menu-modal svg.close-modal {
+  /* float: right;
+  margin-right: 25px;
+  margin-top: 25px; */
+  position: absolute;
+  top: 25px;
+  right: 25px;
+}
+
+#feed-page .burger-menu-modal .burger-menu-modal-content {
+  margin-top: 80px;
+}
+
+#feed-page .burger-menu-modal .burger-menu-modal-content a {
+  display: block;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+#feed-page .burger-menu-modal .burger-menu-modal-content span svg {
+  display: inline;
+  transform: translateY(-2px);
+}
+
+#feed-page .burger-menu-modal .burger-menu-modal-content .book-genres {
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px 0;
+}
+
+#feed-page .burger-menu-modal .burger-menu-modal-content .book-genres a {
+  color: var(--brown);
+  font-size: 18px;
+  font-family: "Poppins Regular";
 }

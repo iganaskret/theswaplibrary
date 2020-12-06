@@ -4,9 +4,242 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>The Swap Library</title>
   </head>
-  <body>
-    <p>sdffdsdfs</p>
+  <body id="feed-page">
+    <nav>
+      <div id="add-book-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24.87"
+          height="24.87"
+          viewBox="0 0 24.87 24.87"
+        >
+          <g
+            id="icons_buttons-09"
+            data-name="icons+buttons-09"
+            transform="translate(-8.99 -9.01)"
+          >
+            <line
+              id="Line_81"
+              data-name="Line 81"
+              y2="21.87"
+              transform="translate(21.417 10.51)"
+              fill="none"
+              stroke="#69513a"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+            />
+            <line
+              id="Line_82"
+              data-name="Line 82"
+              x2="21.87"
+              transform="translate(10.49 21.454)"
+              fill="none"
+              stroke="#69513a"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+            />
+          </g>
+        </svg>
+      </div>
+      <div id="profile-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="27.877"
+          height="35.809"
+          viewBox="0 0 27.877 35.809"
+        >
+          <g
+            id="icons_buttons-03"
+            data-name="icons+buttons-03"
+            transform="translate(-9.18 -7)"
+          >
+            <circle
+              id="Ellipse_14"
+              data-name="Ellipse 14"
+              cx="8.507"
+              cy="8.507"
+              r="8.507"
+              transform="translate(14.576 7)"
+              fill="#69513a"
+            />
+            <path
+              id="Path_17"
+              data-name="Path 17"
+              d="M21.914,17.418h2.392A12.752,12.752,0,0,1,37.057,30.17V33.3A1.205,1.205,0,0,1,35.852,34.5H10.385A1.205,1.205,0,0,1,9.18,33.3V30.152A12.752,12.752,0,0,1,21.932,17.4Z"
+              transform="translate(0 8.305)"
+              fill="#69513a"
+            />
+          </g>
+        </svg>
+      </div>
+      <div id="burger-menu-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24.87"
+          height="23"
+          viewBox="0 0 24.87 23"
+        >
+          <line
+            id="Line_85"
+            data-name="Line 85"
+            x2="21.87"
+            transform="translate(1.5 1.5)"
+            fill="none"
+            stroke="#69513a"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+          />
+          <line
+            id="Line_86"
+            data-name="Line 86"
+            x2="21.87"
+            transform="translate(1.5 21.5)"
+            fill="none"
+            stroke="#69513a"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+          />
+          <line
+            id="Line_87"
+            data-name="Line 87"
+            x2="21.87"
+            transform="translate(1.5 11.5)"
+            fill="none"
+            stroke="#69513a"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+          />
+        </svg>
+      </div>
+    </nav>
+    <div id="feed-logo">
+      <img src="feed logo img.png" alt="books" />
+      <div class="mask"></div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="163"
+        height="90.456"
+        viewBox="0 0 163 90.456"
+      >
+        <image
+          id="logo-03"
+          width="163"
+          height="90.456"
+          xlink:href="data:image/png;base64,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"
+        />
+      </svg>
+    </div>
+    <div id="feed">
+      <h1>Recently added books</h1>
+      <div class="feed-grid">
+        <div class="feed-book">
+          <h2>The Unsplash Book</h2>
+          <img src="books/book1.png" alt="The Unsplash Book cover" />
+        </div>
+        <div class="feed-book">
+          <h2>The Unsplash Book</h2>
+          <img src="books/book1.png" alt="The Unsplash Book cover" />
+        </div>
+        <div class="feed-book">
+          <h2>The Unsplash Book</h2>
+          <img src="books/book1.png" alt="The Unsplash Book cover" />
+        </div>
+        <div class="feed-book">
+          <h2>The Unsplash Book</h2>
+          <img src="books/book1.png" alt="The Unsplash Book cover" />
+        </div>
+      </div>
+    </div>
+
+    <div class="burger-menu-modal hide">
+      <svg
+        class="close-modal"
+        xmlns="http://www.w3.org/2000/svg"
+        width="18.293"
+        height="18.305"
+        viewBox="0 0 18.293 18.305"
+      >
+        <g
+          id="icons_buttons-09"
+          data-name="icons+buttons-09"
+          transform="translate(9.167 -21.161) rotate(45)"
+        >
+          <line
+            id="Line_81"
+            data-name="Line 81"
+            y2="21.87"
+            transform="translate(21.417 10.51)"
+            fill="none"
+            stroke="#69513a"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+          <line
+            id="Line_82"
+            data-name="Line 82"
+            x2="21.87"
+            transform="translate(10.49 21.454)"
+            fill="none"
+            stroke="#69513a"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </g>
+      </svg>
+
+      <div class="burger-menu-modal-content">
+        <a href="feed.html">Home</a>
+        <a href="#" class="books-modal-toggle"
+          >Books
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10.286"
+              height="5.881"
+              viewBox="0 0 10.286 5.881"
+            >
+              <path
+                id="Icon_ionic-ios-arrow-down"
+                data-name="Icon ionic-ios-arrow-down"
+                d="M11.332,15.355l3.889-3.892a.732.732,0,0,1,1.038,0,.741.741,0,0,1,0,1.041l-4.407,4.41a.734.734,0,0,1-1.014.021L6.4,12.507A.735.735,0,0,1,7.44,11.465Z"
+                transform="translate(-6.188 -11.246)"
+              />
+            </svg> </span
+        ></a>
+
+        <div class="book-genres" style="display: none;">
+          <a href="books.html">All genres</a>
+          <a href="books.html">Cooking</a>
+          <a href="books.html">Comics</a>
+          <a href="books.html">Romance</a>
+          <a href="books.html">Fantasy</a>
+          <a href="books.html">Detective</a>
+          <a href="books.html">Sci-Fi</a>
+          <a href="books.html">History</a>
+          <a href="books.html">Fairy Tales</a>
+          <a href="books.html">Myster</a>
+          <a href="books.html">Design</a>
+          <a href="books.html">Other</a>
+        </div>
+        <a href="book-map.html">Book map</a>
+        <a href="add-book.html">Upload a book</a>
+        <a href="community.html">Community</a>
+        <a href="profile.html">My profile</a>
+        <a href="info.html">Information</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
