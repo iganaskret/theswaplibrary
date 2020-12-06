@@ -5,12 +5,6 @@
   --light-brown: #ba9273;
 }
 
-html {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 @font-face {
   font-family: "Poppins";
   src: url(Poppins/Poppins-Medium.ttf);
@@ -22,9 +16,15 @@ html {
   font-weight: bold;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
 #index-page {
   background-color: var(--light-beige);
-  font-family: "Poppins";
 }
 
 #index-page .logo {
@@ -64,4 +64,62 @@ html {
 #index-page div button.focus {
   background-color: var(--brown);
   margin-bottom: 20px;
+}
+
+#signup-page {
+  background-color: var(--light-beige);
+  text-align: center;
+}
+
+#signup-page .logo {
+  text-align: center;
+  font-size: 10px;
+  display: block;
+  margin: 20% auto 0 auto;
+}
+
+#signup-page .logo svg {
+  width: 35%;
+}
+
+#signup-page .logo h1 {
+  margin: 0;
+  margin-bottom: 10%;
+}
+
+#signup-page h1#title {
+  color: var(--brown);
+  text-align: center;
+  font-size: 25px;
+}
+
+#signup-page form {
+  margin-top: 10%;
+}
+
+#signup-page form input,
+#signup-page form button {
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 15px auto;
+  font-size: 18px;
+  padding: 10px;
+  width: 230px;
+  text-align: center;
+}
+
+#signup-page form button {
+  background-color: var(--brown);
+  width: 250px;
+}
+
+#signup-page form button a {
+  color: var(--light-beige);
+  text-decoration: none;
+}
+
+#signup-page #login-link {
+  text-decoration: none;
+  color: var(--brown);
 }
