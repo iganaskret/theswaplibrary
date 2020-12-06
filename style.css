@@ -66,28 +66,33 @@ html {
   margin-bottom: 20px;
 }
 
-#signup-page {
+#signup-page,
+#login-page {
   background-color: var(--light-beige);
   text-align: center;
 }
 
-#signup-page .logo {
+#signup-page .logo,
+#login-page .logo {
   text-align: center;
   font-size: 10px;
   display: block;
   margin: 20% auto 0 auto;
 }
 
-#signup-page .logo svg {
+#signup-page .logo svg,
+#login-page .logo svg {
   width: 35%;
 }
 
-#signup-page .logo h1 {
+#signup-page .logo h1,
+#login-page .logo h1 {
   margin: 0;
   margin-bottom: 10%;
 }
 
-#signup-page h1#title {
+#signup-page h1#title,
+#login-page h1#title {
   color: var(--brown);
   text-align: center;
   font-size: 25px;
@@ -98,7 +103,9 @@ html {
 }
 
 #signup-page form input,
-#signup-page form button {
+#signup-page form button,
+#login-page form input,
+#login-page form button {
   border: none;
   border-radius: 5px;
   display: block;
@@ -109,17 +116,20 @@ html {
   text-align: center;
 }
 
-#signup-page form button {
+#signup-page form button,
+#login-page form button {
   background-color: var(--brown);
   width: 250px;
 }
 
-#signup-page form button a {
+#signup-page form button a,
+#login-page form button a {
   color: var(--light-beige);
   text-decoration: none;
 }
 
-#signup-page #login-link {
+#signup-page #login-link,
+#login-page #signup-link {
   text-decoration: none;
   color: var(--brown);
 }
