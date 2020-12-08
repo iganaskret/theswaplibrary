@@ -145,7 +145,7 @@ html {
   color: var(--brown);
 }
 
-#feed-page nav {
+nav {
   background-color: var(--light-beige);
   margin: 0;
   width: 100vw;
@@ -155,19 +155,19 @@ html {
   left: 0;
 }
 
-#feed-page nav div#add-book-icon {
+nav div#add-book-icon {
   position: relative;
   top: 23px;
   left: 23px;
 }
 
-#feed-page nav div:nth-child(2) {
+nav div:nth-child(2) {
   position: absolute;
   top: 17px;
   right: 70px;
 }
 
-#feed-page nav div:nth-child(3) {
+nav div:nth-child(3) {
   position: absolute;
   top: 23px;
   right: 23px;
@@ -206,13 +206,15 @@ html {
   margin-left: 10px;
 }
 
-#feed-page #feed .feed-grid {
+#feed-page #feed .feed-grid,
+#books-page #books .books-grid {
   margin-left: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-#feed-page #feed .feed-grid h2 {
+#feed-page #feed .feed-grid h2,
+#books-page #books .books-grid h2 {
   color: var(--brown);
   font-size: 22px;
 }
@@ -263,4 +265,65 @@ html {
   color: var(--brown);
   font-size: 18px;
   font-family: "Poppins Regular";
+}
+
+#books-page #searchbar {
+  position: relative;
+  width: 100%;
+  top: 75px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: #ebebeb solid 2px;
+}
+
+#books-page #searchbar form {
+  margin-top: 30px;
+}
+
+#books-page #searchbar form input {
+  font-size: 22px;
+  font-family: "Poppins Regular";
+  color: black;
+  border-color: black;
+  padding: 5px;
+  width: 90vw;
+  border-radius: 5px;
+}
+
+#books-page #searchbar form input::placeholder {
+  color: black;
+}
+
+#books-page #books {
+  position: relative;
+  top: 80px;
+}
+
+#books-page #filters {
+  position: relative;
+  top: 70px;
+  padding-bottom: 30px;
+  border-bottom: #ebebeb solid 2px;
+}
+
+#books-page #filters .filters-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#books-page #filters h2 {
+  margin-bottom: 10px;
+}
+
+#books-page #filters div label {
+  display: block;
+  margin: 10px 0;
+  font-size: 20px;
+  font-family: "Poppins Regular";
+}
+
+#books-page #filters svg {
+  float: right;
+  margin-right: 15px;
 }

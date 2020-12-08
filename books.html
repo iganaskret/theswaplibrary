@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Swap Library</title>
+  </head>
+  <body id="books-page">
+    <nav>
+      <div id="add-book-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24.87"
+          height="24.87"
+          viewBox="0 0 24.87 24.87"
+        >
+          <g
+            id="icons_buttons-09"
+            data-name="icons+buttons-09"
+            transform="translate(-8.99 -9.01)"
+          >
+            <line
+              id="Line_81"
+              data-name="Line 81"
+              y2="21.87"
+              transform="translate(21.417 10.51)"
+              fill="none"
+              stroke="#69513a"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+            />
+            <line
+              id="Line_82"
+              data-name="Line 82"
+              x2="21.87"
+              transform="translate(10.49 21.454)"
+              fill="none"
+              stroke="#69513a"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="3"
+            />
+          </g>
+        </svg>
+      </div>
+      <div id="profile-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="27.877"
+          height="35.809"
+          viewBox="0 0 27.877 35.809"
+        >
+          <g
+            id="icons_buttons-03"
+            data-name="icons+buttons-03"
+            transform="translate(-9.18 -7)"
+          >
+            <circle
+              id="Ellipse_14"
+              data-name="Ellipse 14"
+              cx="8.507"
+              cy="8.507"
+              r="8.507"
+              transform="translate(14.576 7)"
+              fill="#69513a"
+            />
+            <path
+              id="Path_17"
+              data-name="Path 17"
+              d="M21.914,17.418h2.392A12.752,12.752,0,0,1,37.057,30.17V33.3A1.205,1.205,0,0,1,35.852,34.5H10.385A1.205,1.205,0,0,1,9.18,33.3V30.152A12.752,12.752,0,0,1,21.932,17.4Z"
+              transform="translate(0 8.305)"
+              fill="#69513a"
+            />
+          </g>
+        </svg>
+      </div>
+      <div id="burger-menu-icon">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24.87"
+          height="23"
+          viewBox="0 0 24.87 23"
+        >
+          <line
+            id="Line_85"
+            data-name="Line 85"
+            x2="21.87"
+            transform="translate(1.5 1.5)"
+            fill="none"
+            stroke="#69513a"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+          />
+          <line
+            id="Line_86"
+            data-name="Line 86"
+            x2="21.87"
+            transform="translate(1.5 21.5)"
+            fill="none"
+            stroke="#69513a"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+          />
+          <line
+            id="Line_87"
+            data-name="Line 87"
+            x2="21.87"
+            transform="translate(1.5 11.5)"
+            fill="none"
+            stroke="#69513a"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="3"
+          />
+        </svg>
+      </div>
+    </nav>
+    <div id="searchbar">
+      <form autocomplete="off" onsubmit="return false;">
+        <input type="text" placeholder="Search for a book" />
+      </form>
+    </div>
+    <div id="filters">
+      <div class="filters-grid">
+        <div id="genres">
+          <h2>Genres</h2>
+          <label for="fantasy">
+            <input type="checkbox" name="genre" id="fantasy" /> Fantasy
+          </label>
+          <label for="photobook">
+            <input type="checkbox" name="genre" id="photobook" checked />
+            Photobook
+          </label>
+        </div>
+        <div id="hashtags">
+          <h2>Hashtags</h2>
+          <label for="design">
+            <input type="radio" name="hashtag" id="design" /> Design
+          </label>
+          <label for="photo">
+            <input type="radio" name="hashtag" id="photo" checked /> Photo
+          </label>
+        </div>
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="51.41"
+        height="13.414"
+        viewBox="0 0 51.41 13.414"
+      >
+        <g
+          id="Rectangle_18"
+          data-name="Rectangle 18"
+          fill="#f5f2ef"
+          stroke="#f5f2ef"
+          stroke-width="2"
+        >
+          <rect width="13.41" height="13.414" rx="6.705" stroke="none" />
+          <rect
+            x="1"
+            y="1"
+            width="11.41"
+            height="11.414"
+            rx="5.705"
+            fill="none"
+          />
+        </g>
+        <g
+          id="Rectangle_19"
+          data-name="Rectangle 19"
+          transform="translate(19)"
+          fill="#f5f2ef"
+          stroke="#f5f2ef"
+          stroke-width="2"
+        >
+          <rect width="13.41" height="13.414" rx="6.705" stroke="none" />
+          <rect
+            x="1"
+            y="1"
+            width="11.41"
+            height="11.414"
+            rx="5.705"
+            fill="none"
+          />
+        </g>
+        <g
+          id="Rectangle_20"
+          data-name="Rectangle 20"
+          transform="translate(38)"
+          fill="#f5f2ef"
+          stroke="#f5f2ef"
+          stroke-width="2"
+        >
+          <rect width="13.41" height="13.414" rx="6.705" stroke="none" />
+          <rect
+            x="1"
+            y="1"
+            width="11.41"
+            height="11.414"
+            rx="5.705"
+            fill="none"
+          />
+        </g>
+      </svg>
+    </div>
+    <div id="books">
+      <div class="books-grid">
+        <div class="book">
+          <h2>The Unsplash Book</h2>
+          <img src="books/book1.png" alt="The Unsplash Book cover" />
+        </div>
+        <div class="book">
+          <h2>The Unsplash Book</h2>
+          <img src="books/book1.png" alt="The Unsplash Book cover" />
+        </div>
+        <div class="book">
+          <h2>The Unsplash Book</h2>
+          <img src="books/book1.png" alt="The Unsplash Book cover" />
+        </div>
+        <div class="book">
+          <h2>The Unsplash Book</h2>
+          <img src="books/book1.png" alt="The Unsplash Book cover" />
+        </div>
+      </div>
+    </div>
+
+    <div class="burger-menu-modal hide">
+      <svg
+        class="close-modal"
+        xmlns="http://www.w3.org/2000/svg"
+        width="18.293"
+        height="18.305"
+        viewBox="0 0 18.293 18.305"
+      >
+        <g
+          id="icons_buttons-09"
+          data-name="icons+buttons-09"
+          transform="translate(9.167 -21.161) rotate(45)"
+        >
+          <line
+            id="Line_81"
+            data-name="Line 81"
+            y2="21.87"
+            transform="translate(21.417 10.51)"
+            fill="none"
+            stroke="#69513a"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+          <line
+            id="Line_82"
+            data-name="Line 82"
+            x2="21.87"
+            transform="translate(10.49 21.454)"
+            fill="none"
+            stroke="#69513a"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+          />
+        </g>
+      </svg>
+
+      <div class="burger-menu-modal-content">
+        <a href="feed.html">Home</a>
+        <a href="#" class="books-modal-toggle"
+          >Books
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10.286"
+              height="5.881"
+              viewBox="0 0 10.286 5.881"
+            >
+              <path
+                id="Icon_ionic-ios-arrow-down"
+                data-name="Icon ionic-ios-arrow-down"
+                d="M11.332,15.355l3.889-3.892a.732.732,0,0,1,1.038,0,.741.741,0,0,1,0,1.041l-4.407,4.41a.734.734,0,0,1-1.014.021L6.4,12.507A.735.735,0,0,1,7.44,11.465Z"
+                transform="translate(-6.188 -11.246)"
+              />
+            </svg> </span
+        ></a>
+
+        <div class="book-genres" style="display: none;">
+          <a href="books.html">All genres</a>
+          <a href="books.html">Cooking</a>
+          <a href="books.html">Comics</a>
+          <a href="books.html">Romance</a>
+          <a href="books.html">Fantasy</a>
+          <a href="books.html">Detective</a>
+          <a href="books.html">Sci-Fi</a>
+          <a href="books.html">History</a>
+          <a href="books.html">Fairy Tales</a>
+          <a href="books.html">Myster</a>
+          <a href="books.html">Design</a>
+          <a href="books.html">Other</a>
+        </div>
+        <a href="book-map.html">Book map</a>
+        <a href="add-book.html">Upload a book</a>
+        <a href="community.html">Community</a>
+        <a href="profile.html">My profile</a>
+        <a href="info.html">Information</a>
+        <a href="blog.html">Blog</a>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
