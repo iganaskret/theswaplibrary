@@ -217,10 +217,11 @@ nav div:nth-child(3) {
   grid-template-columns: 1fr 1fr;
 }
 
-#feed-page #feed .feed-grid h2,
+#feed-page #feed .feed-grid h2 a,
 #books-page #books .books-grid h2 {
   color: var(--brown);
   font-size: 22px;
+  text-decoration: none;
 }
 
 #feed-page .burger-menu-modal {
@@ -510,4 +511,135 @@ nav div:nth-child(3) {
   text-decoration: none;
   font-family: "Poppins Regular";
   text-align: center;
+}
+
+#book-offer-page .book-cover img {
+  width: 170px;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#book-offer-page .book-cover svg.arrow-back {
+  position: absolute;
+  top: 20px;
+  left: 25px;
+}
+
+#book-offer-page .book-cover svg.book-icons {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+#book-offer-page .book-cover svg.book-dots {
+  display: block;
+  margin: -15px auto 0;
+}
+
+#book-offer-page .book-data {
+  margin-left: 15px;
+}
+
+#book-offer-page .book-data h1 {
+  font-size: 22px;
+}
+
+#book-offer-page .book-data h2 {
+  font-size: 20px;
+  font-family: "Poppins Regular";
+  color: var(--brown);
+}
+
+#book-offer-page .book-data h2 span {
+  color: black;
+}
+
+#book-offer-page .book-data p {
+  font-size: 17px;
+  font-family: "Poppins Regular";
+}
+
+#book-offer-page .book-data h2#book-location span {
+  float: right;
+  margin-right: 15px;
+  font-size: 15px;
+  color: #4d4d4d;
+}
+
+#book-offer-page .book-data img {
+  width: calc(100% + 15px);
+  transform: translateX(-15px);
+}
+
+#book-offer-page .book-data svg {
+  display: block;
+  margin: 0 auto;
+  transform: translateY(-250px);
+}
+
+#book-offer-page .contact-seller {
+  margin-top: -90px;
+  margin-left: 15px;
+}
+
+#book-offer-page .contact-seller p {
+  display: inline-block;
+  font-family: "Poppins Regular";
+  margin-left: 10px;
+  font-size: 20px;
+  transform: translateY(-10px);
+}
+
+#book-offer-page .contact-seller button {
+  display: block;
+  margin: 10px auto 20px;
+  font-family: "Poppins Regular";
+  color: var(--brown);
+  padding: 5px 25px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 2px solid var(--brown);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* Map */
+
+.map {
+  overflow: hidden;
+}
+
+.map-heading {
+  position: relative;
+  width: 100%;
+  top: 75px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 75px;
+
+  text-align: center;
+}
+
+/* ---------------------------------------------------------------------------------------
+  *  Breakpoints
+  */
+
+@media (min-width: 481px) and (max-width: 766px) {
+}
+
+@media (min-width: 767px) {
+  .map {
+    display: flex;
+    justify-content: center;
+
+    padding: 3rem 0;
+  }
+
+  .map-heading {
+    top: 105px;
+  }
+}
+
+@media (min-width: 1226px) {
 }
