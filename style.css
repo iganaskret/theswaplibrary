@@ -371,7 +371,8 @@ nav div:nth-child(3) {
   font-family: "Poppins Regular";
 }
 
-#add-book-page #book-images button {
+#add-book-page #book-images button,
+#add-book-page button {
   text-align: center;
   display: block;
   margin: 10px auto 15px;
@@ -395,7 +396,7 @@ nav div:nth-child(3) {
 
 #add-book-page #book-data form {
   margin: 0;
-  text-align: center;
+  /* text-align: center; */
 }
 
 #add-book-page #book-data form input {
@@ -403,7 +404,6 @@ nav div:nth-child(3) {
   width: 80%;
   border: none;
   border-radius: 5px;
-  display: block;
   margin: 15px auto;
   font-size: 18px;
   padding: 10px;
@@ -428,7 +428,86 @@ nav div:nth-child(3) {
   color: white;
 }
 
-#add-book-page #book-data form label {
+#add-book-page #book-data form label,
+#add-book-page #book-data form textarea {
   font-size: 18px;
   display: block;
+  width: 82%;
+  margin: 15px auto;
+  padding: 10px;
+}
+
+#add-book-page #book-data form label span {
+  /* margin-right: 30px; */
+  float: right;
+  margin: 0;
+}
+
+#add-book-page #book-data form textarea {
+  width: 80%;
+  border: none;
+  height: 100px;
+  margin-top: 0;
+}
+
+#add-book-page #swap-details .location {
+  padding-left: 15px;
+}
+
+#add-book-page #swap-details .location .location-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#add-book-page #swap-details .location .location-grid div svg,
+#add-book-page #swap-details .location .location-grid div p {
+  display: inline;
+}
+
+#add-book-page #swap-details .location .location-grid div svg:first-of-type {
+  transform: translateY(3px);
+}
+
+#add-book-page #swap-details .location .location-grid div p {
+  margin-right: 7px;
+  color: var(--brown);
+  font-family: "Poppins Regular";
+  font-size: 19px;
+}
+
+#add-book-page #swap-details .contact {
+  display: grid;
+  grid-template-columns: 9fr 2fr 1fr;
+  margin: 15px;
+  row-gap: 10px;
+  font-size: 19px;
+  font-family: "Poppins Regular";
+  margin-bottom: 40px;
+}
+
+#add-book-page #swap-details .contact label {
+  display: inline;
+  grid-column: 1;
+}
+
+#add-book-page #swap-details .contact input {
+  transform: translateY(4px);
+  grid-column: 2;
+}
+
+#add-book-page #swap-details .contact span {
+  grid-column: 3;
+  float: right;
+  margin-right: 10px;
+  color: #4d4d4d;
+  font-size: 15px;
+}
+
+#add-book-page a {
+  display: block;
+  margin: 5px auto 30px;
+  color: black;
+  text-decoration: none;
+  font-family: "Poppins Regular";
+  text-align: center;
 }
