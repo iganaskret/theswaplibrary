@@ -1,8 +1,3 @@
-let imgHeight = document.querySelector("#feed-page #feed-logo img")
-  .clientHeight;
-let root = document.documentElement;
-root.style.setProperty("--img-height", imgHeight + "px");
-
 document.querySelector(".books-modal-toggle").addEventListener("click", e => {
   e.preventDefault();
   if (document.querySelector(".book-genres").style.display == "none") {
