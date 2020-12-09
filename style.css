@@ -30,6 +30,10 @@ html {
   width: 100vw;
 }
 
+body {
+  margin: 0;
+}
+
 .hide {
   display: none;
 }
@@ -326,4 +330,105 @@ nav div:nth-child(3) {
 #books-page #filters svg {
   float: right;
   margin-right: 15px;
+}
+
+#add-book-page h1 {
+  padding-left: 15px;
+  margin: 0;
+  font-size: 22px;
+  padding-top: 15px;
+}
+
+#add-book-page h2 {
+  margin: 15px 0;
+  font-size: 20px;
+  color: #4d4d4d;
+}
+
+#add-book-page span {
+  float: right;
+  margin-right: 15px;
+  font-family: "Poppins Regular";
+  font-size: 15px;
+}
+
+#add-book-page #book-images {
+  padding-left: 15px;
+}
+
+#add-book-page #book-images .book-images img {
+  width: 70px;
+  margin-right: 10px;
+}
+
+#add-book-page #book-images .book-images svg {
+  transform: translate(10px, -90px);
+}
+
+#add-book-page #book-images label {
+  font-size: 10px;
+  color: #7e8266;
+  font-family: "Poppins Regular";
+}
+
+#add-book-page #book-images button {
+  text-align: center;
+  display: block;
+  margin: 10px auto 15px;
+  font-family: "Poppins Regular";
+  width: 130px;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 20px;
+  border: 2px solid var(--brown);
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--brown);
+}
+
+#add-book-page #book-data {
+  background-color: var(--light-beige);
+  margin: 0;
+  width: 100%;
+  padding: 20px 0;
+}
+
+#add-book-page #book-data form {
+  margin: 0;
+  text-align: center;
+}
+
+#add-book-page #book-data form input {
+  display: block;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 15px auto;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#add-book-page #book-data form input::placeholder {
+  font-family: "Poppins";
+  color: black;
+}
+
+#add-book-page #book-data form select {
+  display: block;
+  width: 85%;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  margin: 15px auto;
+  font-size: 18px;
+  padding: 10px;
+  font-family: "Poppins";
+  background-color: var(--brown);
+  color: white;
+}
+
+#add-book-page #book-data form label {
+  font-size: 18px;
+  display: block;
 }
