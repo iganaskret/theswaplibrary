@@ -432,3 +432,44 @@ nav div:nth-child(3) {
   font-size: 18px;
   display: block;
 }
+
+
+/* Map */
+
+.map {
+  overflow: hidden;
+}
+
+.map-heading {
+  position: relative;
+  width: 100%;
+  top: 75px;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 75px;
+
+  text-align: center;
+}
+
+ /* ---------------------------------------------------------------------------------------
+  *  Breakpoints
+  */
+
+  @media (min-width: 481px) and (max-width: 766px) {
+  }
+    
+  @media (min-width: 767px){
+    .map {
+      display: flex;
+      justify-content: center;
+
+      padding: 3rem 0;
+    }
+
+    .map-heading {
+      top: 105px;
+    }
+  }
+    
+  @media (min-width: 1226px) {
+  }
