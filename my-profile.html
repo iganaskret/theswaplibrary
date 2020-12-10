@@ -153,6 +153,7 @@
       <div>
         <button>Edit profile</button>
         <svg
+          onclick="window.location.href = 'chats.html'"
           xmlns="http://www.w3.org/2000/svg"
           width="25.967"
           height="25.188"
@@ -437,11 +438,5 @@
       </div>
     </div>
     <script src="script.js"></script>
-    <script>
-      let imgHeight = document.querySelector("#feed-page #feed-logo img")
-        .clientHeight;
-      let root = document.documentElement;
-      root.style.setProperty("--img-height", imgHeight + "px");
-    </script>
   </body>
 </html>

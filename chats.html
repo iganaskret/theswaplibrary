@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>The Swap Library</title>
+  </head>
+  <body id="chats-page">
+    <nav>
+      <div id="go-back-icon" onclick="goBack()">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="13.503"
+          height="23.619"
+          viewBox="0 0 13.503 23.619"
+        >
+          <path
+            id="Icon_ionic-ios-arrow-back"
+            data-name="Icon ionic-ios-arrow-back"
+            d="M15.321,18l8.937-8.93a1.688,1.688,0,0,0-2.391-2.384L11.742,16.8a1.685,1.685,0,0,0-.049,2.327L21.86,29.32a1.688,1.688,0,0,0,2.391-2.384Z"
+            transform="translate(-11.251 -6.194)"
+            fill="#69513a"
+          />
+        </svg>
+      </div>
+      <h1>
+        Chats
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="11"
+          height="11"
+          viewBox="0 0 11 11"
+        >
+          <circle
+            id="Ellipse_18"
+            data-name="Ellipse 18"
+            cx="5.5"
+            cy="5.5"
+            r="5.5"
+            fill="red"
+          />
+        </svg>
+      </h1>
+    </nav>
+
+    <div class="chats">
+      <div class="chat">
+        <img src="profile-pics2.png" alt="profile pic" />
+        <div>
+          <h1>Tomas Sorens</h1>
+          <p>Yes! It is still available. If …</p>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="11"
+          height="11"
+          viewBox="0 0 11 11"
+        >
+          <circle
+            id="Ellipse_18"
+            data-name="Ellipse 18"
+            cx="5.5"
+            cy="5.5"
+            r="5.5"
+            fill="red"
+          />
+        </svg>
+      </div>
+      <div class="chat">
+        <img src="profile-pics1.png" alt="profile pic" />
+        <div>
+          <h1>Jennifer Thompson</h1>
+          <p>Is it still available?</p>
+        </div>
+      </div>
+    </div>
+
+    <p id="end-chat">No more messages</p>
+
+    <script src="script.js"></script>
+    <script>
+      function goBack() {
+        window.history.back();
+      }
+    </script>
+  </body>
+</html>
