@@ -4,6 +4,7 @@
   --brown: #69513a;
   --light-brown: #ba9273;
   --img-height: 0;
+  --feed-height: 0;
 }
 
 @font-face {
@@ -1228,6 +1229,30 @@ nav div:nth-child(3) {
   text-align: center;
 }
 
+#feed-page footer {
+  position: relative;
+  top: calc((var(--img-height)) + 100px);
+  background-color: var(--light-beige);
+  padding: 10px;
+}
+
+footer {
+  position: relative;
+  margin-top: 30px;
+  bottom: 0;
+  background-color: var(--light-beige);
+  padding: 10px;
+}
+
+#feed-page footer span,
+footer span {
+  margin-right: 20px;
+}
+
+#books-page footer {
+  margin-top: 90px;
+}
+
 /* ---------------------------------------------------------------------------------------
   *  Breakpoints
   */
@@ -1777,7 +1802,26 @@ nav div:nth-child(3) {
   .map-heading {
     top: 105px;
   }
-}
 
-@media (min-width: 1226px) {
+  #feed-page footer {
+    position: relative;
+    top: calc((var(--img-height)) + 100px);
+    background-color: var(--light-beige);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 70px;
+  }
+  footer {
+    position: relative;
+    bottom: 0;
+    margin-top: 30px;
+    background-color: var(--light-beige);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 70px;
+  }
+
+  #book-offer-page-big footer {
+    grid-column: 1 / span 2;
+  }
 }
