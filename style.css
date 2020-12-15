@@ -381,7 +381,7 @@ nav div:nth-child(3) {
   padding-left: 15px;
   margin: 0;
   font-size: 22px;
-  padding-top: 15px;
+  padding-top: 30px;
 }
 
 #add-book-page h2 {
@@ -788,7 +788,8 @@ nav div:nth-child(3) {
   left: 0;
 }
 
-#my-profile-page nav div#go-back-icon {
+#my-profile-page nav div#go-back-icon,
+#add-book-page div#go-back-icon {
   position: relative;
   top: 23px;
   left: 23px;
@@ -813,8 +814,11 @@ nav div:nth-child(3) {
   right: 23px;
 }
 
-#my-profile-page #profile-picture {
+#my-profile-page .profile-section {
   margin-top: 100px;
+}
+
+#my-profile-page #profile-picture {
   margin-left: 15px;
   display: grid;
   grid-template-columns: 2fr 3fr;
@@ -822,7 +826,7 @@ nav div:nth-child(3) {
 }
 
 #my-profile-page #profile-picture img {
-  width: 90%;
+  width: 125px;
 }
 
 #my-profile-page #profile-picture div * {
@@ -1567,7 +1571,201 @@ nav div:nth-child(3) {
     cursor: pointer;
   }
 
-  /**/
+  /*book page*/
+
+  #books-page #filters {
+    position: relative;
+    top: 70px;
+    padding-bottom: 30px;
+    border-bottom: #ebebeb solid 2px;
+    margin-left: 10px;
+  }
+
+  #books-page #filters .filters-grid {
+    margin-left: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* my profile */
+
+  #my-profile-page .profile-section {
+    display: block;
+    margin: 100px auto 0;
+    width: 40vw;
+  }
+
+  #my-profile-page #profile-picture {
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-column-gap: 10px;
+  }
+
+  #my-profile-page #profile-picture img {
+    width: 125px;
+  }
+
+  #my-profile-page #profile-picture div * {
+    margin-right: 10px;
+    float: right;
+  }
+
+  #my-profile-page #profile-picture button {
+    display: inline-block;
+    font-family: "Poppins Regular";
+    color: var(--brown);
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid var(--brown);
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  #my-profile-page #profile-bio {
+    margin-left: 15px;
+  }
+
+  #my-profile-page #profile-bio h1 {
+    font-size: 24px;
+    font-family: "Poppins Bold";
+    margin: 10px 0 5px;
+    display: inline-block;
+  }
+  #my-profile-page #my-books .my-books-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px 15px 0;
+  }
+
+  #my-profile-page #my-books .my-books-grid .my-book {
+    margin: 0;
+    padding: 0;
+  }
+
+  #my-profile-page #my-books .my-books-grid img {
+    width: 150px;
+    opacity: 0.4;
+  }
+
+  #my-profile-page #my-books .my-books-grid h2 {
+    font-size: 20px;
+    position: relative;
+    top: -50%;
+  }
+
+  #my-profile-page #my-books svg {
+    display: block;
+    margin: -50px auto 0;
+  }
+
+  #my-profile-page #my-books .my-books-grid svg {
+    position: relative;
+    top: -65%;
+    right: -20%;
+  }
+
+  /* add book */
+  #add-book-page h1 {
+    padding-left: 60px;
+    margin: 0;
+    font-size: 1.7rem;
+    padding-top: 30px;
+  }
+
+  #add-book-page h2 {
+    margin: 15px 0;
+    font-size: 20px;
+    color: #4d4d4d;
+  }
+
+  #add-book-page span {
+    float: initial;
+    margin-left: 30px;
+    font-family: "Poppins Regular";
+    font-size: 15px;
+  }
+
+  #add-book-page #book-images {
+    padding-left: 60px;
+  }
+
+  #add-book-page #book-images .book-images img {
+    width: 170px;
+    margin-right: 10px;
+  }
+
+  #add-book-page #book-images .book-images svg {
+    transform: translate(10px, -220px);
+  }
+
+  #add-book-page #book-images label {
+    font-size: 10px;
+    color: #7e8266;
+    font-family: "Poppins Regular";
+  }
+
+  #add-book-page #book-images button,
+  #add-book-page button {
+    text-align: center;
+    display: block;
+    margin: 10px auto 15px;
+    font-family: "Poppins Regular";
+    width: 130px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 20px;
+    border: 2px solid var(--brown);
+    background-color: transparent;
+    cursor: pointer;
+    color: var(--brown);
+  }
+
+  #add-book-page #book-data form input {
+    width: 30%;
+  }
+
+  #add-book-page #book-data form select {
+    width: 35%;
+  }
+
+  #add-book-page #book-data form label,
+  #add-book-page #book-data form textarea {
+    width: 32%;
+  }
+
+  #add-book-page #book-data form textarea {
+    width: 30%;
+  }
+
+  #add-book-page #swap-details .location {
+    padding-left: 40vw;
+  }
+
+  #add-book-page #swap-details .location .location-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #add-book-page #swap-details .location .location-grid div p {
+    margin-right: 7px;
+    color: var(--brown);
+    font-family: "Poppins Regular";
+    font-size: 19px;
+  }
+
+  #add-book-page #swap-details .contact {
+    display: grid;
+    grid-template-columns: 300px 10px 20px;
+    margin: 15px;
+    margin-left: 40vw;
+    row-gap: 10px;
+    font-size: 19px;
+    font-family: "Poppins Regular";
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
 
   .map {
     display: flex;
