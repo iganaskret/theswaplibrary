@@ -173,11 +173,17 @@ nav div#add-book-icon {
 
 nav div:nth-child(2) {
   position: absolute;
+  top: 20px;
+  right: 9.5rem;
+}
+
+nav div:nth-child(3) {
+  position: absolute;
   top: 17px;
   right: 5.5rem;
 }
 
-nav div:nth-child(3) {
+nav div:nth-child(4) {
   position: absolute;
   top: 23px;
   right: 2rem;
@@ -262,10 +268,22 @@ nav div:nth-child(3) {
 }
 
 #feed-page #feed .feed-grid h2 a,
-#books-page #books .books-grid h2 {
+#books-page #books .books-grid h2 a {
   color: var(--brown);
   font-size: 22px;
   text-decoration: none;
+}
+
+#burger-menu-icon,
+.close-modal,
+a,
+nav svg,
+#go-back-icon,
+input,
+.feed-book img,
+.book img,
+.chat {
+  cursor: pointer;
 }
 
 .burger-menu-modal {
@@ -805,11 +823,17 @@ nav div:nth-child(3) {
 
 #my-profile-page nav div:nth-child(3) {
   position: absolute;
+  top: 20px;
+  right: 120px;
+}
+
+#my-profile-page nav div:nth-child(4) {
+  position: absolute;
   top: 17px;
   right: 70px;
 }
 
-#my-profile-page nav div:nth-child(4) {
+#my-profile-page nav div:nth-child(5) {
   position: absolute;
   top: 23px;
   right: 23px;
@@ -1752,7 +1776,7 @@ footer span {
   }
 
   #add-book-page #book-data form select {
-    width: 35%;
+    width: 31.5%;
   }
 
   #add-book-page #book-data form label,
